@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
+  //ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
