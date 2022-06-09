@@ -1,17 +1,12 @@
 <template>
   <div>
-    <h2 class="text-center">Ronin Spectre</h2>
+          <NuxtLink to="/blog">Blog</NuxtLink>
+    <h2 align="center">Ronin Spectre</h2>
   </div>
 </template>
 
-
 <script>
-export default {
-  name: "Home"
-}
+export default {};
 </script>
 
-
-<style scoped>
-
-</style>
+<style></style>

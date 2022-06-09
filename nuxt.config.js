@@ -6,14 +6,14 @@ export default defineNuxtConfig({
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxt3RC-PWA",
+    title: "nuxt3RC-spectre",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{src: "~/plugins/pwa-update", mode: "client"}],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -36,22 +36,14 @@ export default defineNuxtConfig({
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxt/content"],
+  content:{
+    //Options
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    meta: {
-      title: "R0N1n nuxt3RC PWA",
-      author: "R0N1n",
-    },
-    manifest: {
-      name: "R0N1n-dev nuxt3 PWA",
-      short_name: "R0XTPWA",
-      lang: "en",
-    },
-  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 });
